@@ -42,7 +42,7 @@ public class Scanner {
             case '*': addToken(TokenType.STAR); break;
 
             default:
-                Main.error(line, "Unexpected character.");
+                Lox.error(line, "Unexpected character.");
                 break;
         }
     }
