@@ -1,8 +1,5 @@
 package com.lox;
 
-import com.sun.org.apache.xpath.internal.compiler.Keywords;
-
-import javax.print.DocFlavor;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -80,8 +77,18 @@ public class Scanner {
                 if (match('/')) {
                     while (peek() != '\n' && !isAtEnd())
                         advance();
-                }
-                else {
+                } else if (match('*')) {
+                    advance();
+
+                    while (peek() != '*' && peekNext() != '/') {
+                        if (peek() == '\n')
+                            line++;
+                        advance();
+                    }
+
+                    advance();
+                    advance();
+                } else {
                     addToken(TokenType.SLASH);
                 }
                 break;
