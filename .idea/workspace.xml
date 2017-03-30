@@ -12,6 +12,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lox/com/lox/Token.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lox/com/lox/TokenType.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Lox/tools/GenerateAst.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
